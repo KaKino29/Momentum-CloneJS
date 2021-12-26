@@ -1,0 +1,183 @@
+* {
+    box-sizing: border-box;
+    font-family: 'Noto Sans KR', sans-serif;
+}
+
+body {
+    background-color: #202020;
+    color: whitesmoke;
+    -ms-overflow-style:none; 
+}
+
+body::-webkit-scrollbar { display:none; }
+
+main {
+    margin: 10px;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+#bgImage {
+    position: fixed;
+    left: 0;
+    top: 0;
+    min-height: 100%;
+    min-width: 1024;
+    width: 100%;
+    height: auto;
+    z-index: -5;
+    opacity: 0.5;
+    border: 0;
+    padding: 0;
+}
+
+#clock {
+    font-size: 105px;
+    margin-bottom: 0px;
+}
+
+#today {
+    font-size: 25px;
+    margin-top: 0;
+}
+
+#greeting {
+    font-size: 40px;
+}
+
+#login-form {
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    width: 500px;
+    margin-bottom: 30px;
+}
+
+#login-form input {
+    border: none;
+    padding: 15px 0px;
+    font-size: 20px;
+    border-bottom: 2px solid white;
+    background-color: transparent;
+    color: whitesmoke;
+}
+
+#login-form #btn {
+    margin-left: 15px;
+    border-bottom: none;
+    cursor: pointer;
+}
+
+#login-form #btn:active {
+    transform: scale(0.95);
+}
+
+.todo {
+    position: relative;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    height: 70vh;
+}
+
+#todo-form {
+    margin: 25px;
+    font-size: 30px;
+}
+
+#todo-form input {
+    width: 35vw;
+    border: none;
+    padding: 15px 0px;
+    font-size: 15px;
+    border-bottom: 2px solid white;
+    background-color: transparent;
+    color: whitesmoke;
+    text-align: center;
+}
+
+#todo-list {
+    width: 33vw;
+    height: 250px;
+    list-style: none;
+    margin: 2px auto;
+    overflow: auto;
+    font-size: 19px;
+}
+
+#todo-list::-webkit-scrollbar {
+    width: 0px;
+}
+
+#todo-list li {
+    padding: 2px;
+    text-align: left;
+}
+
+#todo-list li button {
+    font-size: 18px;
+    font-weight: bold;
+    color: lime;
+    background: none;
+    border: 0;
+    outline: 0;
+    cursor: pointer;
+    float: right;
+    margin-right: 30px;
+}
+
+#todo-list li button:active {
+    transform: scale(0.90);
+}
+
+header {
+    display: flex;
+    align-items: center;
+    text-align: center;
+    justify-content: space-between;
+}
+
+header #logout-form {
+    border: none;
+    padding: 5px 5px 5px 5px;
+    font-size: 15px;
+    background-color: transparent;
+    color: whitesmoke;
+}
+
+header #logout-form:active {
+    transform: scale(0.93);
+}
+
+header #weather {
+    font-size: 20px;
+}
+
+footer {
+    font-size: 23px;
+    position: absolute;
+    text-align: right;
+    display: flex;
+    flex-direction: column;
+    padding: 5px 5px 5px 5px;
+    right: 5px;
+    bottom: 5px;
+}
+
+footer :last-child {
+    font-size: 17px;
+}
+
+::placeholder {
+    color: whitesmoke;
+    text-align: center;
+    font-size: 20px;
+}
+
+.hidden {
+    display: none;
+}
